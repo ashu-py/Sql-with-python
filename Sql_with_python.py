@@ -20,7 +20,7 @@ try:
         import sqlite3 as s
         def query():
 
-                file=input("entre path of file or db\n")
+                file=input("entre path of file or db .\n[if it not find the database then it will a new one]\n")
                 c=s.connect(file);t.sleep(1);
                 print("connection is satablished with database\n")
                 cu=c.cursor()                                                                                                         
