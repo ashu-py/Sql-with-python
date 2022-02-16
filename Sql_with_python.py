@@ -23,8 +23,10 @@ try:
                 file=input("entre path of file or db\n")
                 c=s.connect(file);t.sleep(1);
                 print("connection is satablished with database\n")
-                cu=c.cursor()                                                                                                         cu.execute(text);
-                c.commit()                                                                                                            print(cu.fetchall())
+                cu=c.cursor()                                                                                                         
+                cu.execute(text);
+                c.commit()                                                                                                            
+                print(cu.fetchall())
                 for row in cu.execute(text):
                         print(row)
                 c.close()
